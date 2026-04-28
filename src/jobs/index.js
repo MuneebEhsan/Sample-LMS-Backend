@@ -6,11 +6,11 @@ const logger            = require('../common/utils/logger');
 let queues = {};
 
 const QUEUE_NAMES = {
-  ENCRYPT:  'drm:encrypt',
+  ENCRYPT:  'drm-encrypt',
   EMAIL:    'email',
   REPORT:   'report',
-  SCORM:    'scorm:process',
-  GRADE:    'grade:recalculate',
+  SCORM:    'scorm-process',
+  GRADE:    'grade-recalculate',
 };
 
 function initQueues() {
