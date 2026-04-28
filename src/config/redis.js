@@ -7,7 +7,7 @@ let client;
 function getRedis() {
   if (!client) {
     client = new Redis(process.env.REDIS_URL || 'redis://localhost:6379', {
-      maxRetriesPerRequest: 3,
+      maxRetriesPerRequest: null,
       retryStrategy: (times) => Math.min(times * 200, 3000),
       lazyConnect: true,
     });
