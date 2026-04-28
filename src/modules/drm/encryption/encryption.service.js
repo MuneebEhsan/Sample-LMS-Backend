@@ -1,7 +1,7 @@
 'use strict';
 const crypto = require('crypto');
 const fs     = require('fs');
-const { query } = require('../../db');
+const { query } = require('../../../db');
 const logger = require('../../../common/utils/logger');
 
 async function encryptFile({ fileId, filePath, algorithm = 'AES-256-GCM', keyId }) {

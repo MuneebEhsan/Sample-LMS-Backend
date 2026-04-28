@@ -1,10 +1,10 @@
 'use strict';
 const router = require('express').Router();
 const { v4: uuid } = require('uuid');
-const { query }    = require('../../db');
-const { auth, requireRole } = require('../../common/middleware/auth');
-const { paginate, paginatedResponse } = require('../../common/utils/pagination');
-const { auditLog } = require('../../common/utils/audit');
+const { query }    = require('../../../db');
+const { auth, requireRole } = require('../../../common/middleware/auth');
+const { paginate, paginatedResponse } = require('../../../common/utils/pagination');
+const { auditLog } = require('../../../common/utils/audit');
 
 /* ════════════════════ LICENSE PROFILES ══════════════════════════════════════ */
 /**

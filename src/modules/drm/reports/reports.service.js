@@ -1,6 +1,6 @@
 'use strict';
 const logger = require('../../../common/utils/logger');
-const { query } = require('../../db');
+const { query } = require('../../../db');
 
 async function generateScheduledReport({ id, template, format, recipients, tenantId }) {
   logger.info(`[report] Generating ${template} (${format}) for tenant ${tenantId}`);

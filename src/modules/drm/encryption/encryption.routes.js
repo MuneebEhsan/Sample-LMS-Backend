@@ -5,9 +5,9 @@ const path   = require('path');
 const fs     = require('fs');
 const multer = require('multer');
 const { v4: uuid }  = require('uuid');
-const { query }     = require('../../db');
-const { auth, requireRole } = require('../../common/middleware/auth');
-const { auditLog }  = require('../../common/utils/audit');
+const { query }     = require('../../../db');
+const { auth, requireRole } = require('../../../common/middleware/auth');
+const { auditLog }  = require('../../../common/utils/audit');
 const { enqueueEncrypt } = require('../../../jobs');
 const logger = require('../../../common/utils/logger');
 
